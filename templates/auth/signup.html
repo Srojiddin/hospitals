@@ -1,24 +1,25 @@
 {% extends 'base/base.html' %}
-
-{% block title %}
-    registrasiya
-{% endblock %}
-
-
-{% block content %}
-
-    {% include 'base/header.html' %}
-
-    <main>
-        <div style="display: flex; justify-content: center; padding-top: 40px; padding-bottom: 40px">
-            <form action="{% url 'signup' %}" method="post" style="width: 50%">
-                {% csrf_token %}
-                {{  form.as_p  }}
-              <button type="submit" class="btn btn-primary">zaregistrirovatsa</button>
-            </form>
-        </div>
-    </main>
-
-    {% include 'base/footer.html' %}
-
-{% endblock %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2>Регистрация</h2>
+    <form action="/register/" method="post">
+        {% csrf_token %}
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="confirm_password">Подтверждение пароля:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+</body>
+</html>

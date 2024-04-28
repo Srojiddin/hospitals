@@ -30,3 +30,8 @@ class UserDeleteForm(forms.ModelForm):
     class Meta:
         model = User
         fields = []
+
+
+# class LoginForm(forms.Form):
+#     username = forms.CharField(max_length=100, label='Имя пользователя')
+#     password = forms.CharField(widget=forms.PasswordInput(), label='Пароль')

@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.hospitals.models import Appointment
+
+admin.site.register(Appointment)

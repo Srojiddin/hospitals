@@ -24,5 +24,10 @@ class Patient(models.Model):
     creation_date = models.DateTimeField(
         default=timezone.now)
 
+    class Meta:
+        verbose_name = "patient"
+        verbose_name_plural = "patients"
+
+
     def __str__(self):
         return self.first_name

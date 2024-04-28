@@ -17,11 +17,15 @@ class Doctor(models.Model):
     experience = models.PositiveSmallIntegerField(
     )
     image_for_doctor = models.ImageField(
-        upload_to="blogs/",
+        upload_to="doctors/",
         verbose_name="Фото",
     )
     creation_date = models.DateTimeField(
         default=timezone.now)
+
+    class Meta:
+        verbose_name = "doctor"
+        verbose_name_plural = "doctors"
 
     def __str__(self):
         return self.name
