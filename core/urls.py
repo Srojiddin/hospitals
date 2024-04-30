@@ -9,7 +9,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('doctors/',include('apps.doctors.urls')),
     path('patients/',include('apps.patients.urls')),
-    path('users/',include('apps.users.urls'))
+    path('users/',include('apps.users.urls')),
+    path('hospitals/',include('apps.hospitals.urls'))
 ]
 
 

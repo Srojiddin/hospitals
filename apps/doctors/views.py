@@ -6,7 +6,7 @@ from apps.doctors.forms import DoctorCreateForm, DoctorUpdateForm, DoctorDeleteF
 
 class DoctorListView(generic.ListView):
     model = Doctor
-    template_name = 'doctors.html'
+    template_name = 'doctors/doctors.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -16,14 +16,15 @@ class DoctorListView(generic.ListView):
 
 class DoctorDetailView(generic.DetailView):
     model = Doctor
-    template_name = 'doctor_detail.html'
+    template_name = 'detail.html'
+    context_object_name = 'doctors'
 
 
 class DoctorUpdateView(generic.UpdateView):
     model = Doctor
     form_class = DoctorUpdateForm
     template_name = 'doctor_update.html'
-    success_url = '/index.html'
+    success_url = 'doctors.html'
 
 
 class DoctorDeleteView(generic.DeleteView):
@@ -31,4 +32,4 @@ class DoctorDeleteView(generic.DeleteView):
     form_class = DoctorDeleteForm
     template_name = 'doctor_delete.html'
     context_object_name = 'object'
-    success_url = '/index.html'
+    success_url = 'doctors.html'

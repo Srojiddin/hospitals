@@ -3,6 +3,7 @@ from apps.hospitals.models import Appointment
 from apps.hospitals.forms import AppointmentCreateFrom, AppointmentDetailForm
 from django.urls import reverse_lazy
 
+
 class AppointmentList(generic.ListView):
     model = Appointment
     template_name = 'contact.html'
@@ -30,4 +31,4 @@ class AppointmentDelete(generic.DeleteView):
     model = Appointment
     template_name = 'appointment_confirm_delete.html'
     context_object_name = 'appointment'
-    success_url = reverse_lazy('success-url-name')
+    success_url = reverse_lazy('/')

@@ -5,6 +5,13 @@ from apps.doctors.models import Doctor
 from django.conf import settings
 
 
+# class Hospital(models.Model):
+#     hospital_choice = (
+#         ('Доктор Ислам'),
+#         ('Клиника Касиет'),
+#         ('Доктор Айдаров'),
+#     )
+
 class Appointment (models.Model):
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,

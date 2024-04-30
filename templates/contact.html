@@ -1,0 +1,287 @@
+{% extends 'base/_base.html' %}
+
+{% block content %}
+
+<!--Start Preloader -->
+{#<div class="preloader"></div>#}
+<!--End Preloader --> 
+
+<!--Start header area-->
+
+<!--Start top bar area-->
+<section class="top-bar-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                <div class="top-left">
+                    <p><span class="flaticon-phone"></span>24 hours emergency & ambulance Service: +321 789 01 2345</p> 
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                <div class="top-right clearfix">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End top bar area-->  
+
+<!--Start header area--> 
+ {% include 'blocks/header.html' %}
+<!--End header area-->  
+
+<!--Start header-search  area-->
+ {% include 'blocks/header.html' %}
+<!--End header-search  area-->        
+
+<!--Start mainmenu area-->
+<section class="mainmenu-area stricky">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <!--Start mainmenu-->
+                <nav class="main-menu pull-left">
+                    <div class="navbar-header">   	
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="about.html">About Us</a>
+                                <ul>
+                                    <li><a href="about.html">About Hospitals</a></li>
+                                    <li><a href="doctors/doctors.html">Meet Our Doctors</a></li>
+                                    <li><a href="faq.html">FAQ’s</a></li>
+                                    <li><a href="testimonials.html">Testimonials</a></li>
+                                    <li><a href="project.html">Our Gallery</a></li>
+                                    <li><a href="project-single.html">Gallery Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="departments.html">Departments</a>
+                                <ul>
+                                    <li><a href="cardiac-clinic.html">Cardiac Clinic</a></li>
+                                    <li><a href="pulmonology.html">Pulmonology</a></li>
+                                    <li><a href="gynecology.html">Gynecology</a></li>
+                                    <li><a href="neurology.html">Neurology</a></li>
+                                    <li><a href="urology.html">Urology</a></li>
+                                    <li><a href="gastrology.html">Gastrology</a></li>
+                                    <li><a href="pediatrician.html">Pediatrician</a></li>
+                                    <li><a href="laborotory.html">Laborotory</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="time-table.html">Time Table</a></li>
+                            <li class="dropdown"><a href="blog-default.html">News</a>
+                                <ul>
+                                    <li><a href="blog-default.html">News Default</a></li>
+                                    <li><a href="blog-large.html">News Large View</a></li>
+                                    <li><a href="blog-single.html">News Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="shop.html">Shop</a>
+                                <ul>
+                                    <li><a href="shop.html">Shop Products</a></li>
+                                    <li><a href="shop-single.html">Products Single</a></li>
+                                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="account.html">My Account</a></li>
+                                </ul>
+                            </li>
+                            <li class="current"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--End mainmenu-->
+                <!--Start mainmenu right box-->
+                <div class="mainmenu-right-box pull-right">
+                    <div class="cart_select">
+                        <button><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>(0)</span></button>
+                    </div>
+                    <div class="consultation-button">
+                        <a href="#">For Consultation</a>    
+                    </div>
+                </div>
+                <!--End mainmenu right box-->    
+            </div>
+        </div>
+    </div>
+</section>
+<!--End mainmenu area-->
+
+<!--Start breadcrumb area-->     
+<section class="breadcrumb-area" style="background-image: url(images/resources/breadcrumb-bg.jpg);">
+	<div class="container">
+	    <div class="row">
+	        <div class="col-md-12">
+	            <div class="breadcrumbs">
+	                <h1>Contact Us</h1>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<div class="breadcrumb-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="left pull-left">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                            <li class="active">Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="right pull-right">
+                        <a href="#">
+                            <span><i class="fa fa-share-alt" aria-hidden="true"></i>Share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End breadcrumb area-->
+
+<!--Start contact form area-->
+<section class="contact-form-area">
+    <div class="container">
+        <div class="sec-title">
+            <h1>Get Touch With Us</h1>
+            <span class="border"></span>
+            <div class="select-box pull-right">
+                <select class="text-capitalize selectpicker form-control required" name="form_subject" data-style="g-select" data-width="100%">
+                    <option>Newyork Campus</option>
+                    <option>Canada Campus</option>
+                    <option>UK Campus</option>
+                    <option>USA Campus</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="contact-form">
+                    <form id="contact-form" name="contact_form" class="default-form" action="inc/sendmail.php" method="post">
+                        <h2>Make an Appointment</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="form_email" value="" placeholder="Your Mail*" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_phone" value="" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="form_subject" value="" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea name="form_message" placeholder="Your Message.." required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+                                <button class="thm-btn bgclr-1" type="submit" data-loading-text="Please wait...">send message</button>
+                            </div>
+                        </div>
+                    </form>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="quick-contact">
+                    <div class="title">
+                        <h2>Quick Contact</h2>
+                        <p>If you have any questions simply use the following contact details.</p>
+                    </div>
+                    <ul class="contact-info">
+                        <li>
+                            <div class="icon-holder">
+                                <span class="flaticon-pin"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5><span>Address:</span> 121, Park Drive, Varick Str<br>New York, NY 10012, USA</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-holder">
+                                <span class="flaticon-technology"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5><span>Phone:</span> (123) 0200 12345 &<br>1800-45-678-9012</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-holder">
+                                <span class="flaticon-interface"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h5><span>Email:</span> Mailus@hospitalteam.com</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>    
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--End contact form area-->  
+
+<!--Start contact map area-->
+<section class="contact-map-area">
+    <div class="container-fluid">
+        <div class="google-map-inner">
+            <div 
+                class="google-map" 
+                id="contact-google-map" 
+                data-map-lat="44.529688" 
+                data-map-lng="-72.933009" 
+                data-icon-path="images/resources/map-marker.png" 
+                data-map-title="Brooklyn, New York, United Kingdom" 
+                data-map-zoom="12" 
+                data-markers='{
+                    "marker-1": [44.529688, -72.933009, "<h4>Head Office</h4><p>44/77 Alabama, a western U.S.A</p>"]
+                }'>
+            </div>
+        </div>  
+    </div>
+</section>
+<!--End contact map area-->
+
+<!--Start footer area-->  
+ {% include 'blocks/footer.html' %}
+<!--End footer area-->
+
+<!--Start footer bottom area-->
+    {% include 'blocks/footer.html' %}
+<!--End footer bottom area-->
+
+</div>
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-triangle-inside-circle"></span></div>
+
+
+{% endblock %}
